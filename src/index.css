@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  min-height: 100dvh;
+  font-family: "Inter, system-ui, Avenir, Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.wrapper {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px 0px 15px;
+  padding: 20px;
+  background-color: #3a3a3a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-title {
+  margin: 2.5px 0px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-counter {
+  font-size: small;
+  color: rgb(184, 184, 184);
+  margin-bottom: 20px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.user-btn {
+  margin: 10px 0px 10px 0px;
+  background-color: rgb(0, 94, 170);
+}
+
+.user-btn:hover {
+  background-color: rgb(3, 67, 119);
+}
+
+.user-btn:disabled {
+  background-color: rgba(3, 67, 119, .2);
+  cursor: not-allowed;
+}
+
+.owner-btn {
+  margin: 10px 0px 10px 0px;
+  background-color: rgb(170, 0, 23);
+}
+
+.owner-btn:hover {
+  background-color: rgb(121, 2, 18);
+}
+
+.owner-btn:disabled {
+  background-color: rgba(119, 3, 32, 0.2);
+  cursor: not-allowed;
+}
+
+.helper-btn {
+  margin: 0px 5px;
+}
+
+.info-wrapper {
+  margin: 30px 0px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-wrapper p {
+  margin: 0px 15px 0px 15px;
+}
+
+.info-wrapper p span {
+  background-color: #242424;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .info-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info-wrapper p {
+    margin: 10px 0px 10px 0px;
+  }
+}
